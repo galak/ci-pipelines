@@ -305,6 +305,6 @@ jobs:
             - ${CITOOLS}/scripts/check_compliance.py -e Documentation -e License -g -r ${CI_TOOLS_REPO_REPO_FULL_NAME} -s -S ${SHA}
             - export COMMIT_RANGE=origin/${CI_TOOLS_REPO_BASE_BRANCH}..HEAD
             - echo "Building a Pull Request";
-            - ${CITOOLS}/scripts/check_compliance.py -e Documentation --commits ${COMMIT_RANGE} -g -p ${CI_TOOLS_REPO_PULL_REQUEST} -r ${CI_TOOLS_REPO_REPO_FULL_NAME} -S ${SHA} -o compliance.xml || true
+            - ${CITOOLS}/scripts/check_compliance.py -e License -e Documentation --commits ${COMMIT_RANGE} -g -p ${CI_TOOLS_REPO_PULL_REQUEST} -r ${CI_TOOLS_REPO_REPO_FULL_NAME} -S ${SHA} -o compliance.xml || true
             - echo "Commit range:" ${COMMIT_RANGE}
 
