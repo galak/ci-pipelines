@@ -109,6 +109,8 @@ resources:
               - topic-devicetree
               - v1.14-branch
               - v2.0-branch
+              - v2.1-branch
+              - v2.2-branch
           buildOnPullRequest: true
           buildOnCommit: false
 
