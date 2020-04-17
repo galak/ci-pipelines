@@ -35,7 +35,7 @@ jobs:
             cd $(shipctl get_resource_state "sdk_ng_repo");
             ls -la;
             mkdir -p scripts/toolchains;
-            aws s3 sync --quiet ${S3_PATH}/ scripts/toolchains;
+            aws s3 sync ${S3_PATH}/ scripts/toolchains;
             echo "aws s3 sync return code $?"
             # create index for s3
             ls -la scripts/toolchains;
