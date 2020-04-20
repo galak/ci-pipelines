@@ -16,6 +16,8 @@ jobs:
       - IN: daily-verify
 
   - name: create_sdk_ng
+    runtime:
+      nodePool: large_nodes
     type: runSh
     steps:
       - IN: s3-token
