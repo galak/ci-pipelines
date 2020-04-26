@@ -22,6 +22,10 @@ resources:
       type: integration
       integration: "aws_s3_simple"
 
+    - name: s3-token-testing
+      type: integration
+      integration: "s3_testing"
+
     - name: daily-verify
       type: time
       seed:
