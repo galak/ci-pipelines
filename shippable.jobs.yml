@@ -26,6 +26,7 @@ jobs:
       nodePool: large_nodes
     type: runSh
     steps:
+      - IN: daily-test
       - IN: s3-token-testing
       - IN: main_repo_all_prep
         switch: off
